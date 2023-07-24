@@ -1,0 +1,89 @@
+:root {
+    --setting-transition-default: all 300ms ease;
+}
+
+*, *::after, *::before, *::placeholder {
+    font-family: 'Work Sans', sans-serif;
+    color: white !important;
+}
+
+body {
+    background-image: url("../images/signUp_background_img.png");
+    object-fit: cover;
+    background-color: #211C5A;
+}
+
+
+
+
+/* Navbar styles */
+
+.navbar-toggler {
+    background-image: radial-gradient(#602EA6, #C977D6);
+}
+
+.nav-item {
+    transition: var(--setting-transition-default);
+}
+
+.nav-item:hover {
+    border: 1px solid #D557EA;
+    background-image: linear-gradient(to right bottom, rgba(201,129,214, 40%) -10%, rgba(96,46,166, 40%) 90%);
+}
+
+
+/* Sign Up form styles */
+
+.sign-up-form {
+    background-color: rgba(48, 55, 100, 90%);
+    border: 1px solid #6B91FF;
+    border-radius: 20px;
+    box-shadow: 16px 21px 49px -5px rgba(0,0,0,0.75);
+}
+
+.cover-image {
+    max-width: 100%;
+    max-height: 695px;
+
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.text-muted, .form-control::placeholder{
+    color: #ACAFC1 !important;
+}
+
+.reset-password {
+    color: #0EC6F9 !important;
+}
+
+.form-control {
+    border: 1px solid #5B69BF !important;
+    background-color: transparent !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 0%), rgba(255, 255, 255, 5%)) !important;
+}
+
+#sign-up-btn {
+    background-image: linear-gradient(to top left,#602EA6, #C977D6);
+    border: 1px solid #B444D7;
+}
+
+#sign-up-btn:hover {
+    box-shadow: 0px 0px 32px 25px rgba(182,70,214,0.76) inset;
+}
+
+#sign-up-google-btn {
+    background-color: white;
+    color: #0E435C !important;
+}
+
+#sign-up-google-btn:hover {
+    box-shadow: 0px 0px 32px -10px rgba(147,231,221,0.76);
+}
+
