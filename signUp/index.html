@@ -23,7 +23,7 @@
 </head>
 
 
-<body>
+<body class="min-vh-100">
     <header class="container-fluid">
         <div class="row">
             <!-- Navbar -->
@@ -44,7 +44,7 @@
                         <ul class="navbar-nav w-100 justify-content-end gap-2 gap-md-3 gap-lg-4 me-5 text-center pt-3 pt-md-0">
 
                             <li class="nav-item rounded-4 px-2">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="#">Home</a>
                             </li>
 
                             <li class="nav-item rounded-4 px-2">
@@ -70,16 +70,21 @@
     </header>
 
 
-    <main class="container pt-3">
+    <main class="container py-5">
         <!-- Sign Up form -->
         <section class="row justify-content-center">
-            <div class="col-12 col-md-8 px-4 px-md-0">
+            <div class="col-12 col-md-9 px-4 px-md-0">
 
-                <div class="container-fluid sign-up-form">
+                <div class="container-fluid sign-up-form z-3">
                     <div class="row">
 
-                        <div class="col-6 px-0 d-none d-lg-block">
+                        <div class="col-6 px-0 d-none d-lg-block position-relative">
                             <img src="../images/sign_up_cover_img.png" class="img-fluid cover-image" alt="Cover image">
+
+                            <div class="cover-text px-5">
+                                <h2>Join a thriving community of creators</h2>
+                                <p class="text-muted">With Artificial Intelligence</p>
+                            </div>
                         </div>
 
                         <div class="col-12 col-lg-6">
@@ -94,7 +99,7 @@
 
                                 <div class="mb-4">
                                     <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control text-muted rounded-3" placeholder="******">
+                                    <input type="password" class="form-control text-muted rounded-3" placeholder="*******">
                                 </div>
 
                                 <p class="text-muted">Forgot password? <a class="reset-password text-decoration-none" href="#">Reset password</a></p>
@@ -115,6 +120,19 @@
             </div>
         </section>
     </main>
+
+    <script>
+        let sign_up_btn = document.getElementById('sign-up-btn');
+        let sign_up_google_btn = document.getElementById('sign-up-google-btn');
+
+        sign_up_btn.onclick = () => {
+            window.location.href = '../landingPage/index.html';
+        }
+
+        sign_up_google_btn.onclick = () => {
+            window.location.href = '../landingPage/index.html';
+        }
+    </script>
 
 </body>
 
