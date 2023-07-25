@@ -15,9 +15,16 @@
     --color-updates-banner-bg: linear-gradient(to right, #fff 10%, rgba(255,255,255, 0.5) 95%);
     --color-update-banner-border: 1px solid white;
     --color-update-banner-li: linear-gradient(to right, #fff 15%, rgba(255,255,255, 0.3) 40%);
-    --color-view-more-btn-bg: linear-gradient(to bottom, rgb(101, 103, 129, 0.4), rgba(227, 227, 227, 0.9));
+    --color-view-more-btn-bg: linear-gradient(to bottom, rgb(255, 255, 255, 0%),#fff 80%, rgba(225, 225, 225, 30%));
 
-    --color-button-hover-glow-effect: 0px 0px 20px 2px rgba(146, 161, 237, 1);
+    --color-button-hover-glow-effect: 0px 0px 15px 2px rgba(146, 161, 237, 1);
+
+    --color-main-section-bg: linear-gradient(to bottom, rgba(225, 229, 239, 0%) -20%, #E1E5EF 40%, #96A0BF);
+    --color-main-section-border: 1px solid #CAD1DF;
+
+    --color-card-bg: linear-gradient(to bottom, rgb(209, 219, 230, 0%) 50%, #C5CCDE);
+    --color-card-border: 1px solid white;
+    --color-card-shadow: 2px 2px 20px 4px rgba(0,0,0,0.5);
 
     --color-text: black;
 }
@@ -39,7 +46,14 @@
     --color-update-banner-li: linear-gradient(to right, rgba(17,16,24, 0%), rgba(17,16,24, 55%));
     --color-view-more-btn-bg: linear-gradient(to bottom, #41375F, #282E49);
 
-    --color-button-hover-glow-effect: 0px 0px 20px 2px rgba(182,70,214,1);
+    --color-button-hover-glow-effect: 0px 0px 15px 1px rgba(182,70,214,1);
+
+    --color-main-section-bg: linear-gradient(to top, rgb(0, 0, 0, 0.8) -50%, rgb(11, 21, 49, 0.5));
+    --color-main-section-border: 1px solid #472F4F;
+
+    --color-card-bg: linear-gradient(to bottom, rgba(49, 58, 91, 10%) 60%, rgba(49, 58, 91, 45%) 70%, #313A5B);
+    --color-card-border: 1px solid #596AA9;
+    --color-card-shadow: 2px 2px 20px 4px rgba(0,0,0,0.5);
 
     --color-text: white;
 }
@@ -171,12 +185,51 @@ body {
 
 #view-more-btn {
     background-image: var(--color-view-more-btn-bg);
-    border: 1px solid var(--color-bg);
+    border: var(--color-card-border);
     transition: var(--setting-transition-default);
 }
 
 #view-more-btn:hover {
     box-shadow: var(--color-button-hover-glow-effect);
+}
+
+
+/* Main Section styles */
+
+.main-section {
+    background-image: var(--color-main-section-bg);
+    transition: var(--setting-transition-default);
+    border: var(--color-main-section-border);
+}
+
+.card {
+    background-color: transparent;
+    background-image: var(--color-card-bg);
+    box-shadow: var(--color-card-shadow);
+    border: var(--color-card-border);
+    transition: var(--setting-transition-default);
+}
+
+.card a:hover {
+    scale: calc(1.02);
+}
+
+.card-img-top {
+    max-height: 290px;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--color-bg);
+}
+
+.card-hr {
+    border: var(--color-card-border);
+}
+
+.text_truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 
