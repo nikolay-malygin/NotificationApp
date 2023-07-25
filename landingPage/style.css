@@ -5,7 +5,7 @@
 
     --hero-section-bg-img: url('../images/light_theme_bg_image.png');
     --hero-section-to-bottom-gradient: linear-gradient(to bottom, #040A97 0%, #D84974 10%, #8B5DD7 15%, rgba(0,0,0, 0%) 25%);
-    --hero-section-to-right-gradient: linear-gradient(to right, #fff, rgba(255,255,255, 20%) 120%);
+    --hero-section-to-right-gradient: linear-gradient(to right, #fff 50%, rgba(255,255,255, 20%) 120%);
     --hero-section-title-gradient: linear-gradient(90deg, #D651CD, rgba(232,90,118, 0.6) 45%, rgba(0,0,0, 0.8) 80%);
 
     --color-hero-section-btn-hover: linear-gradient(to bottom, #C8D1FE, #92A1ED 30%), radial-gradient(rgba(46, 108, 166, 0%), #779DD6);
