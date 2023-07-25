@@ -75,6 +75,7 @@ body {
 /* Header Nav styles */
 .header-nav {
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     font-weight: 500;
     z-index: 3;
 }
@@ -115,6 +116,8 @@ body {
 .landing-page-title {
     font-size: 5.5vh;
     background: var(--hero-section-title-gradient);
+
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
