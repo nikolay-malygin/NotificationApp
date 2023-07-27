@@ -69,6 +69,7 @@
 html {
     overflow-x: hidden;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 *, *::after, *::before, *::placeholder {
@@ -226,7 +227,7 @@ body {
     min-height: 25vh;
     max-height: 25vh;
     height: 100%;
-    
+
     object-fit: cover;
     background-color: var(--color-bg);
 }
@@ -247,7 +248,6 @@ body {
     width: 46px;
     height: 26px;
     background-color: var(--color-card-hexagon-icon);
-    position: absolute;
     top: 25vh;
     left: 90%;
     transform: translate(-50%, -50%);
@@ -273,6 +273,9 @@ body {
     border-top: 12px solid var(--color-card-hexagon-icon);
 }
 
+.hexagon svg * {
+    fill: var(--color-text);
+}
 
 
 /**  Switch button **/
